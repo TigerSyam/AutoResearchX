@@ -13,6 +13,8 @@ readability-lxml>=0.8
 lxml>=5.0
 
 # Vector store (used by memory/vector_store.py)
-numpy>=1.26
-faiss-cpu>=1.8
-sentence-transformers>=3.0
+# NOTE: These are heavy (torch/sentence-transformers) and can exceed Render free-tier memory.
+# Enable them only for local "research" mode.
+# numpy>=1.26
+# faiss-cpu>=1.8
+# sentence-transformers>=3.0
